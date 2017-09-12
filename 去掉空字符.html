@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var arr=[12,32,66,,33,,78];
+        var newarr=[];
+        for(var i=0;i<=arr.length;i++){
+        	if(arr[i]!=undefined){
+        		newarr[newarr.length]=arr[i];
+        	}
+        }
+        document.write(newarr);
+
+        var row=20;
+		for(var i=1;i<=row;i++){
+			for(var a=1;a<=20;a++){
+				document.write('&nbsp');
+			}
+			for(var j=(row-1);j>=i;j--){
+			    document.write('_');
+			}
+			for(var j=1;j<=(2*i-1);j++){
+				document.write('*');
+		    }
+		 document.write('<br>');
+		}
+	</script>
+</body>
+</html>

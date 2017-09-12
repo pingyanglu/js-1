@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+	var arr=[21,12,323,54,68,87,33335];
+    sort(arr,'<')
+    function sort(arr,type){
+    	if(sort==undefined){
+    		sortDown(arr);
+    	}else{
+    		sortUp(arr);
+    	}
+    }
+    function sortUp(arr){
+    	for(var i=0;i<=arr.length;i++){
+    		for(var j=i+1;j<=arr.length;j++){
+    			if(arr[i]>arr[j]){
+    				var num=arr[i];
+    				arr[i]=arr[j];
+    				arr[j]=num;
+    			}
+    		}
+    	}
+    	console.log(arr);
+    }
+    sortUp(arr);
+    function sortDown(arr){
+    	for(var i=0;i<=arr.length;i++){
+    		for(var j=i+1;j<=arr.length;j++){
+    			if(arr[i]<arr[j]){
+    				var num=arr[i];
+    				arr[i]=arr[j];
+    				arr[j]=num;
+    			}
+    		}
+    	}
+    	console.log(arr);
+    }
+    sortDown(arr);
+
+    var arr=[12,32,5465,56,24,1,34,434];
+    var newarr=[];
+    function fn(){
+    	for(var i=0;i<=arr.length;i++){
+        	if(arr[i]%2==0){
+        		newarr[newarr.length]=arr[i];
+        	}
+        }
+       console.log(newarr);
+    }
+    fn();
+
+    function aa(num1,num2){
+    	return num1+num2;
+    }
+    aa();
+    	function bb(num1,num2){
+    		return num1-num2;
+    	}
+    	bb();
+    		function cc(num1,num2){
+    			return num1*num2;
+    		}
+    		cc();
+    // console.log(bb,1,2);
+    var result=math(1,2,cc);
+    console.log(result);
+    function math(num1,num2,fn){
+    	return fn(num1,num2);
+    }
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

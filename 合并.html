@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function fun(a,b){
+    	document.write('<table border=1 cellspacing=0>');
+        for(var i=1;i<=a;i++){
+    	    document.write('<tr>');
+    	    for(var j=1;j<=b;j++){
+    		    document.write('<td>1-1</td>');
+    	    }
+    	    document.write('</tr>');
+        }
+        document.write('</table>');
+    }
+    fun(10,10);
+
+    var arr=[21,12,323,54,68,87,33335];
+    fn(arr,'a','as','adad','weqe');
+    function fn(arr){
+    	console.log(arguments);
+    	for(var i=1;i<arguments.length;i++){
+    		arr[arr.length]=arguments[i];
+    	}
+    	console.log(arr);
+    }
+	</script>
+</body>
+</html>

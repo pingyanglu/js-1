@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function fn(){
+    	var num=10;
+    	return fn1;//11
+        function fn1(){
+        	num=num+1;
+        	alert(num);
+        	return fn2;//16
+        	function fn2(){
+        		num=num+5;
+        		alert(num);
+        		return fn3;//26
+        		function fn3(){
+        			num=num+10;
+        			alert(num);
+        			return fn4;//36
+        			function fn4(){
+        				num=num+10;
+        				alert(num);
+        				return num;//36
+        			}
+        		}
+        	}
+        }
+    }
+    alert(fn()()()()());
+
+    var fn=a=>a;
+    alert(9);
+    var fn1=(a,b)=>a+b;
+    alert(fn1(1,2));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

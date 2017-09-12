@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var arr=[12,3,44,65,7,63,34];
+    var newarr=[];
+    function fn(arr,value){
+    	for(var i=0;i<=arr.length;i++){
+    		if(arr[i]>value){
+    			newarr[newarr.length]=arr[i];
+    		}
+    	}
+    	console.log(newarr);
+    	return newarr;
+    }
+    fn(arr,20);
+
+    var arr=[1,2,3,4,5,6,7,8,9];
+    var newarr=[];
+    function fn(){
+    	for(var i=0;i<arr.length;i++){
+    		newarr[newarr.length]=arr[i]*2;
+    	}
+    	console.log(newarr);
+    	return newarr;
+    }
+    fn();
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

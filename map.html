@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		 function map(arr,fun){
+    	var brr=[];
+    	for(var i=0;i<arr.length;i++){
+    		brr[i]=fun();
+    	}
+    	return brr;
+    }
+    var arr=[1,2,3,4,5];
+    var brr=map(arr,function(){
+    	return 1;
+    });
+    console.log(brr);
+    function filter(arr,fun){
+    	let brr=[];
+    	for(let i=0;i<arr.length;i++){
+    		if(fun(arr[i])){
+    		    brr[brr.length]=arr[i];
+    		}
+    	}
+    	return brr;
+    }
+    var result=filter(arr,function(value){
+    	return value>3;
+    })
+    console.log(result);
+
+    var arr=[1,2,3,4,5,6,7];
+    function push(arr){
+    	console.log(arguments);
+    	for(var i=0;i<arguments.length;i++){
+        	arr[arr.length]=arguments[i];
+    	}
+    	console.log(arr);
+    }
+    push(arr,66,88,99);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

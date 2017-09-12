@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		var arr=[12,21,34,57,78,9];
+    function indexOf(arr,value){
+        for(var i=0;i<=arr.length;i++){
+        	if(arr[i]==value){
+        		return i;
+        	}
+        }
+        return -1;
+    }
+    console.log(indexOf(arr,57));
+    function lastindexOf(arr,value){
+        for(var i=arr.length-1;i>=0;i--){
+        	if(arr[i]==value){
+        		return i;
+        	}
+        }
+        return -1;
+    }
+    console.log(indexOf(arr,12));
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
