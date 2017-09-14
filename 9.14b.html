@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>duixiang</title>
+</head>
+<body>
+	<script>
+		// let arr=[1,2,3,4,5,6,7];
+		// let aarr=['a','b','c'];
+		// let abrr=['x','y','z'];
+		// let newarr=[];
+		// newarr=aarr.concat(arr,abrr);
+		// console.log(newarr);
+
+		// let arr=[11,33,55,66,88,33,66];
+		// function fun(){
+		// 	let newarr=[];
+		// 	for(let i=0;i<arr.length;i++){
+		// 		if(!newarr.includes(arr[i])){
+		// 			newarr.push(arr[i]);
+		// 		}
+		// 	}
+		// 	return newarr;
+		// }
+		// console.log(fun());
+
+		// let arr=[11,33,55,66,88,33,66];
+		// console.log(delRepeat(arr));
+		// function delRepeat(arr){
+		// 	let newarr=[];
+		// 	for(let i=0;i<arr.length;i++){
+		// 		let flag=true;
+		// 		for(let j=i+1;j<arr.length;j++){
+		// 			if(arr[i]==arr[j]){
+		// 				 flag=false;
+		// 				break;
+		// 			}
+		// 		}
+		// 		if(flag){
+		// 			newarr.push(arr[i]);
+		// 		}
+		// 	}
+		// 	return newarr;
+		// }
+
+		// console.log(Math.abs(121));
+		// console.log(Math.round(10.3));
+		// console.log(Math.ceil(10.1));
+		// console.log(Math.random());
+		// console.log(Math.random()*10);
+		// console.log(Math.random()*10-5);
+		// console.log(Math.pow(2,4));
+		// console.log(Math.sqrt(9));
+		let arr=['a','b','c','d','e','f','g'];
+		function indexArr(arr,num){
+			let newarr=[];
+			while(newarr.length<num){
+				let sum=Math.floor(Math.random()*arr.length);
+				if(!newarr.includes(arr[sum])){
+					newarr.push(arr[sum]);
+				}
+			}
+			return newarr;
+		}
+		console.log(indexArr(arr,3));
+		// function indexArr(arr,num){
+		// 	let newarr=[];
+		// 	for(let i=0;i<num;i++){
+		// 		let sum=Math.floor(Math.random()*arr.length);
+		// 			while(!newarr.includes(arr[sum])){
+		// 			while(newarr.length<num){
+		// 				newarr.push(arr[sum]);
+		// 			}
+		// 		}
+		// 	}
+		// 	return newarr;
+		// }
+		// console.log(indexArr(arr,3));
+		// function indexArr(arr,num){
+		// 	let newarr=[];
+		// 	for(let i=0;i<num;i++){
+		// 		let sum=Math.floor(Math.random()*arr.length);
+		// 		if(!newarr.includes(arr[sum])){
+		// 			newarr.push(arr[sum]);
+		// 		}else{
+		// 			i--;
+		// 		}
+		//     }
+		//     return newarr;
+		// }
+		// console.log(indexArr(arr,4));
+		</script>
+</body>
+</html>
