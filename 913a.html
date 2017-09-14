@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// let newarr=new myArray(1,2,3,4,5,6);
+  //       console.log(newarr);
+		// this.indexOf()=function(){
+		// 	for(let i=0;i<arguments.length;i++){
+		// 		if(this[i]==arguments[i]){
+		// 			return true;
+		// 		}
+		// 	}
+  //           return false;
+		// }
+		// console.log(indexOf);
+
+   //      let newarr=new myArray(1,2,3,4,5,6);
+   //      arr.push(11,12,13,14);
+   //      class myArray{
+   //      	constructor(){
+   //      		this.map=function(){
+			// let newarr=new myArray();
+			// for(let i=0;i<arguments.length;i++){
+			// 	newarr.push(fn(value));
+			// }
+			// return newarr;
+		 //        }
+		 //        console.log(newarr);
+   //      	}
+   //      }
+
+		function Person(name,age,sex,sleep,say,study){
+            this.name=name;
+            this.age=age;
+            this.sex=sex;
+            Person.prototype={
+			sleep:function(){
+				alert('休息');
+			},
+			say:function(){
+				alert('演讲');
+			},
+			study:function(){
+				alert('学习');
+			}
+		    }
+		    Person.prototype.eat=function(){
+			alert('eat');
+		    }
+	    }
+		let zhangsan=new Person('zhangsan',20,'nan');
+		let lisi=new Person('lisi',30,'nan');
+	    console.log(zhangsan);
+	    console.log(lisi);
+	    lisi.say();
+	    zhangsan.sleep();
+
+	 // function person(name,age,sex,say){
+	 // 	this.name=name;
+	 // 	this.age=age;
+	 // 	this.sex=sex;
+	 // 	this.say=function(){
+	 // 		alert('演讲');
+	 // 	}
+	 // }
+	 // function student(study,eat){
+	 // 	this.study=function(){
+	 // 		alert('学习');
+	 // 	},
+	 // 	this.eat=function(){
+	 // 		alert('吃饭');
+	 // 	}
+	 // }
+	 // person.prototype=new student();
+	 // let zhangsan=new person('张三',20,'男');
+	 // let lisi=new student();
+	 // zhangsan.study();
+
+    
+	</script>
+</body>
+</html>
