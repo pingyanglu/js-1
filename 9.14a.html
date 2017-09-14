@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+</head>
+<body>
+	<script>
+		let arr=[1,2,3,4,5,1,2];
+		let newarr=[];
+		for(let i=0;i<arr.length;i++){
+			for(let j=i+1;j<=arr.length;j++){
+				if(arr[i]-arr[j]==0){
+					arr.splice(j,1);
+					newarr=arr;
+				}
+			}
+		}
+		console.log(newarr);
+		// let map=arr.map((value,index)=>value+index);
+		// console.log(map);
+		// let map=arr.map(function(value,index,str){
+		// 	return value+index;
+		// })
+		// console.log(map);
+		// arr.sort(function(a,b){
+		// 	return a-b>0;
+		// 	return a-b<0;
+		// })
+		// let arr1=['q','w','e'];
+		// let arr2=['z','x','c'];
+		// let newarr=arr.concat(arr1,arr2);
+		// arr.push(...arr1);
+		// for(let i=0;i<arr1.length;i++){
+		// 	arr[arr.length]=arr1[i];
+		// }
+		// let result=arr.push('a','s','d');
+		// let length=arr.unshift('q','w','e');
+		// arr.pop();
+		// arr.shift();
+		// arr.splice(3,2);
+		// arr.splice(2,0,'a','s','d');
+		// console.log(result);
+		// console.log(length);
+		// console.log(newarr);
+		// console.log(arr);
+		// 
+		// let arr=[1,2,3,4,5,6];
+		// let arr1=['q','w','e'];
+		// arr.push(...arr1);
+		// for(let i=0;i<arr1.length;i++){
+		// 	arr[arr.length]=arr1[i];
+		// }
+		// let result=arr.push('a','s','d');
+		// let length=arr.unshift('q','w','e');
+		// arr.pop();
+		// arr.shift();
+		// arr.splice(3,2);
+		// arr.splice(2,0,'a','s','d');
+		// console.log(result);
+		// console.log(length);
+		// console.log(arr);
+	</script>
+</body>
+</html>
