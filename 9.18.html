@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="9.18.css">
+</head>
+<style>
+	.box{
+		width: 0px;
+		height: 0px;
+		background: blue;
+		margin-top: 10px;
+        transition: 3s;
+        color: #fff;
+	}
+	button{
+		width: 50px;
+		height: 30px;
+		border-radius: 10px;
+	}
+</style>
+<body>
+	<button class="a">down</button>
+	<button class="a">up</button>
+	<div class="box">今天天气真好<br>阳光明媚<hr>风和日丽<hr>晴空万里</div>
+	<!-- <div class="box">今天天气真好</div>
+	<div class="box">今天天气真好</div>
+	<div class="box">今天天气真好</div> -->
+	<script>
+		let but1=document.getElementsByClassName('a');
+		let box1=document.getElementsByClassName('box');
+        but1[0].onclick=function(){
+            box1[0].style.height='300px';
+            box1[0].style.width='105px';
+            box1[0].style.color='#000';
+        }
+        but1[1].onclick=function(){
+            box1[0].style.height='0px';
+        }
+        box1[0].innerText='hello';
+		// 输出标题
+		// console.log(document.title);
+	    // 修改标题
+		// document.title='这是document的标题';
+		// console.dir(document);
+		// document.URL='http://www.baidu.com';
+		// document.bgColor='#fff';
+		// document.fgColor='#ddd';
+		// box.style.height=200px;
+		// let box1=document.getElementById('box');
+		// box1[1].style.background=blue;
+		// console.log(box1);
+        
+	</script>
+</body>
+</html>

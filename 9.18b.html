@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+    *{
+    	list-style: none;
+    }
+	main{
+        width: 500px;
+        height: 300px;
+        background: blue;
+        position: relative;
+	}
+	ul{
+		width: 200px;
+		height: 20px;
+		margin: 0 auto;
+		/* background: red; */
+		position: absolute;
+		bottom: 60px;
+		left: 0;
+		right: 0;
+	}
+	ul li{
+		width: 20px;
+		height: 20px;
+		background: #aaa;
+		float: left;
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+</style>
+<body>
+	<main>
+		<ul class="the">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</main>
+	<script>
+		let the=document.getElementsByTagName('the');
+		let lis=document.getElementsByTagName('li');
+		for(let i=0;i<lis.length;i++){
+			lis.style.background='#000';
+		}
+	</script>
+</body>
+</html>

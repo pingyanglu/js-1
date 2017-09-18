@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function table(num){
+			num=num==undefined?10:num;
+			document.write('<table border=1 cellspacing=0>');
+			for(let i=1;i<=num;i++){
+				document.write('<tr>');
+				for(let j=1;j<=num;j++){
+					document.write('<td>aa</td>');
+				}
+				document.write('</tr>');
+			}
+			document.write('</table>');
+		}
+		table(15);
+
+	</script>
+</body>
+</html>

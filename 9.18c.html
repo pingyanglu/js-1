@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.box{
+			width: 500px;
+			height: 300px;
+			background: red;
+			margin: 60px auto;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<!-- 300px 300s 放大10px 放大到 500px -->
+	<div class="box"></div>
+	<script>
+		let box=document.getElementsByClassName('box')[0];
+		let t=setInterval(fn,1);
+		let stup=10;
+		function fn(){
+			let w=parseInt(getComputedStyle(box,null).width);
+            if(w>=500){
+            	stup=-stup;
+            }
+            if(w<300){
+            	stup=-stup;
+            }
+            box.style.width=`${w+stup}px`;
+		}
+	</script>
+</body>
+</html>
