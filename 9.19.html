@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	/* .box{
+		width: 300px;
+		height: 100px;
+		background: #aaa;
+	}
+	.box1{
+		width: 200px;
+	}
+	.box2{
+		width: 150px;
+	} */
+</style>
+<body>
+	<div class="box">天气很好
+		<div class="box box1">天气很好</div>
+		<div class="box box2">天气很好</div>
+		<div class="box box3">天气很好</div>
+	</div>
+	<script>
+		var boxs=$('.box');
+		// let boxs=document.getElementsByClassName('box');
+		function getClass(classname){
+    		if(document.getElementsByClassName){
+    			return document.getElementsByClassName(classname);
+    		}else{
+    		var newarr=[];
+    		var all=document.getElementsByTagName('*');
+    		console.log(all);
+    		for(var i=0;i<all.length;i++){
+    			if(all[i].className==classname){
+    				newarr.push(all[i]);
+    			}
+    		}
+    		return newarr;
+    	}
+    }
+    function checkClass(className,classname){
+    	var arr=className.split(' ');
+    	for(var i=0;i<arr.length;i++){
+    		if(arr[i]==classname){
+    			return true;
+    		}
+    	}
+    	return false;
+    }
+    function $(select){
+	    var first = select.charAt(0);
+  	    if(first == '.'){
+            return getClass(select.substring(1));
+    }else if(first == '#'){
+        return document.getElementById(select.substring(1));
+    }else if(/^[a-z][a-z1-6]{0,7}$/.test(select)){
+        return document.getElementsByTagName(select);
+    }
+    }
+    console.log(boxs);
+	</script>
+</body>
+</html>
